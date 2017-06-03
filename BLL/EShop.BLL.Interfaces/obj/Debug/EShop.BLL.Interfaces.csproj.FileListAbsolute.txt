@@ -12,3 +12,10 @@ C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewMo
 C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.dll
 C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.pdb
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.BLL.Interfaces.dll
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.BLL.Interfaces.pdb
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewModels.dll
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewModels.pdb
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.dll
+C:\Users\msit11125\Desktop\EShopMVC5\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.pdb
