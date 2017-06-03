@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EShop後台</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/CustomCss.css" rel="stylesheet" />
+
+    @RenderSection("css",false)
+</head>
+<body>
+
+    <div class="row affix-row">
+        <div class="col-sm-3 col-md-2 affix-sidebar">
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="visible-xs navbar-brand">Sidebar menu</span>
+                    </div>
+                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                        <ul class="nav navbar-nav" id="sidenav01">
+                            <li class="active">
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01" class="collapsed">
+                                    <h4>
+                                        EShop後台
+                                        <br>
+                                        <small>其他選項 <span class="caret"></span></small>
+                                    </h4>
+                                </a>
+                                <div class="collapse" id="toggleDemo0" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="#">設定</a></li>
+                                        <li><a href="#">登出</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
+                                    <span class="glyphicon glyphicon-cloud"></span> 商品類別 <span class="caret pull-right"></span>
+                                </a>
+                                <div class="collapse" id="toggleDemo" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="@Url.Action("Index","Categories")">主要類別管理</a></li>
+                                        <li><a href="@Url.Action("Index","CategoriesSub")">子類別管理</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
+                                    <span class="glyphicon glyphicon-inbox"></span> 商品及訂單 <span class="caret pull-right"></span>
+                                </a>
+                                <div class="collapse" id="toggleDemo2" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="@Url.Action("Index","Products")">商品管理</a></li>
+                                        <li><a href="#">訂單明細</a></li>
+                                        <li><a href="#">Submenu2.3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-lock"></span> 會員管理 </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span class="badge pull-right">42</span></a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div style="height:82px;background-color:#f2f2f2">
+
+        </div>
+
+        <div class="col-sm-9 col-md-10 affix-content">
+            <div class="custContainer">
+                @RenderBody()
+
+                <footer style="margin-top:5%">
+                    <p>&copy; @DateTime.Now.Year - DI股份有限公司 ( 股票代號 : 0000 ) 版權所有</p>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

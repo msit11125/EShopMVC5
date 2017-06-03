@@ -1,0 +1,12 @@
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\IDEASpaceMVC5.DAL.dll.config
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\IDEASpaceMVC5.DAL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\IDEASpaceMVC5.DAL.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\EntityFramework.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\EntityFramework.xml
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\obj\Debug\IDEASpaceMVC5.DAL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\obj\Debug\IDEASpaceMVC5.DAL.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\IDEASpaceMVC5.Domain.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Debug\IDEASpaceMVC5.Domain.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\obj\Debug\IDEASpaceMVC5.DAL.csprojResolveAssemblyReference.cache

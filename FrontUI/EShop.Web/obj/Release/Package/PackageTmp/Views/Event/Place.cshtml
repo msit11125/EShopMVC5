@@ -1,0 +1,105 @@
+﻿<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">會場佈置 / Event</div>
+<div class="main">
+    <div class="right_box event"><img src=""><span></span></div>
+    <div class="left_box event">
+        <div class="section">
+            <div class="title">大型活動</div>
+            <div class="content"></div>
+        </div>
+        <div class="section">
+            <div class="title">戶外活動</div>
+            <div class="content"></div>
+        </div>
+        <div class="section">
+            <div class="title">發佈會</div>
+            <div class="content"></div>
+        </div>
+        <div class="section">
+            <div class="title">其他</div>
+            <div class="content"></div>
+        </div>
+    </div>
+
+</div>
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_event.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/event.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}
+
+@section scripts{
+    @*範例檔案*@
+    <script type="text/javascript">
+        $(function () {
+            var json = [];
+
+            //event list
+            function build(data, parent) {
+                var html = "";
+                for (var i = 0, k = data.length; i < k; i++) {
+                    if (data[i].parent == parent) {
+                        html += "<a href=\"@Url.Action("PlaceDetail", "Event")?id=" + data[i].id + "\"";
+                        html += "data-img=\"" + data[i].photo[0] + "\"" + "data-word=\"@@" + data[i].year + data[i].location + "\">";
+                        html += data[i].location + "</a>";
+                    }
+                }
+                return html;
+            }
+
+
+            $.getJSON('/Scripts/data/event.json', function (data) {
+                json = data;
+                for (var i = 0; i < 4; i++) {
+                    $(".content").eq(i).html(build(data, i));
+                };
+                pic();
+
+            });
+
+
+            function pic() {
+                $(".section a").mouseover(function () {
+                    var dataimg = $(this).attr("data-img");
+                    var dataword = $(this).attr("data-word");
+                    $(".right_box.event img").attr("src", dataimg);
+                    $(".right_box.event span").html(dataword);
+                });
+                //先選出第一張
+                var firstword = $(".section a").first().attr("data-word");
+                var firstimg = $(".section a").first().attr("data-img");
+                //alert(firstimg);
+                $(".right_box.event img").attr("src", firstimg);
+                $(".right_box.event span").html(firstword);
+            }
+
+
+
+        });
+    </script>
+}

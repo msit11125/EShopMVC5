@@ -1,0 +1,14 @@
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.BLL.Interfaces.dll
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.BLL.Interfaces.pdb
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.dll
+C:\Users\USER\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.pdb
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.BLL.Interfaces.dll
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.BLL.Interfaces.pdb
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewModels.dll
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\bin\Debug\EShop.ViewModels.pdb
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.dll
+C:\Users\msit11125\Desktop\Eshop\BLL\EShop.BLL.Interfaces\obj\Debug\EShop.BLL.Interfaces.pdb

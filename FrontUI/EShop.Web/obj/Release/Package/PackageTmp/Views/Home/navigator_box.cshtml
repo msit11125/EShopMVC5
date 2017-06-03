@@ -1,0 +1,41 @@
+﻿
+<!-- 每頁navigator -->
+<div class="navigator_box">
+    <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x">
+        <span class="lines"></span>
+    </button>
+    <div class="navigator_main">
+        <div class="m_open">
+            <span>魅力角設 Idea Space Design</span>
+            <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x open">
+                <span class="lines"></span>
+            </button>
+        </div>
+        <ul class="navigator">
+            <li class="aboutus"><a href="@Url.Action("About","Home")">魅力源起 / About Us</a></li>
+            <li class="event">
+                <a>會展實績 / Event Photos</a>
+                <ul class="event_sub">
+                    <li><a href="@Url.Action("Place","Event")">會場佈置</a></li>
+                    <li><a href="@Url.Action("Exhibition","Event")">展覽設計</a></li>
+                    <li><a href="@Url.Action("Advertising","Event")">平面設計</a></li>
+                </ul>
+            </li>
+            <li class="charisma"><a href="@Url.Action("Charisma","Home")">魅力團隊 / Charisma Team</a></li>
+            <li class="media">
+                <a>動態展示 / Event Movies</a>
+                <ul class="media_sub">
+                    <li><a href="@Url.Action("Display","Movie")">影片展示</a></li>
+                    <li><a href="@Url.Action("Models","Movie")">模型展示</a></li>
+                </ul>
+            </li>
+            <li class="contact"><a href="@Url.Action("Contact","Home")">聯絡我們 / Contact Us</a></li>
+
+            <div class="fbfs">
+                <a class="fb trans-o-a" href="https://www.facebook.com/charismadesign/" target="_blank"></a>
+                <a class="fs trans-o-a" href="http://www.facebook.com/sharer.php?u=http://www.charisma-design.com.tw/index.html" target="_blank"></a>
+            </div>
+        </ul>
+
+    </div>
+</div>

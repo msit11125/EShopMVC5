@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import "normalize.css";
+@import "basic.css";
+@import "menu.css";
+
+/* menu 顯示設定 */
+.m_index_navigator{display: none;}
+
+/* about us */
+.left_box.aboutus{width:52%;float:left;}
+.left_box.aboutus p{line-height:1.9rem;margin-bottom: 2.5rem;text-indent:1rem;}
+.right_box.aboutus{width:45%;float:right;}
+.right_box.aboutus img{width:100%;height:auto;}
+.right_box.aboutus span{width:100%;text-align: right;font-size:.7rem;display:block;}
+
+/* charisma team  */
+.section.charism{width:23%;height:350px;margin:0 10px;float:left;border:1px solid #ccc;margin-bottom:1rem;padding:1rem;position:relative;}
+.section.charism .title3{font-size:1.3rem;width:97%;height:2.3rem;border-bottom:1px solid #ccc;margin:0 auto 10px auto;text-align:center;color:#909;}
+.section.charism p{line-height:1.9rem;text-indent:1rem;}
+.section.charism span{position:absolute;bottom:1rem;right:1rem;}
+
+/* contact us  */
+.left_box.contactus{width:40%;float:left;}
+.right_box.contactus{width:57%;float:right; border:1px solid #d4d2d2; padding:.7rem 1rem; margin-top: 19px;}
+
+.left_box.contactus span{width:100%;height:40px;line-height:40px;display:block;color:#909; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.left_box.contactus p{width:100%;line-height:40px; margin:5px auto;}
+.left_box.contactus p input[type="text"] {height:30px;background-color: #f2f2f2; border:none;padding:0 .5rem;font-size:.8rem;}
+.left_box.contactus p input.name,.left_box.contactus p input.phone_n {width:435px;}
+.left_box.contactus p input.email {width:419px;}
+.left_box.contactus p textarea {width:100%;height:120px;background-color: #f2f2f2; border:none; resize: none;padding:.5rem;line-height: 1.1rem;font-size:.8rem;}
+.left_box.contactus p input[type="text"]:focus,.left_box.contactus p textarea:focus { outline: none !important;border:1px solid #c9c;}
+
+.left_box.contactus a.fb2{
+	width:100%; height:50px;background-color:#3b5998; display:block; font-size:1.5rem; color:#fff;margin:20px auto;font-weight: 600;text-align: center;line-height: 50px;transition: .7s ease;-webkit-transition: .7s ease;
+}
+.left_box.contactus a.fb2:hover{background-color:#909;box-shadow:0;}
+.left_box.contactus button.btn2{width:80px!important; float:right;height:40px;margin:0 .3rem;line-height: 35px; text-align: center;font-weight: 600;color: #999;background-color: #fff;border:.2rem solid #dddcdc;position: relative; cursor:pointer;}
+.left_box.contactus button.btn2:hover{background-color: #909;border-color:#fff;color: #fff;transition: .7s ease;-webkit-transition: .7s ease;
+}
+.left_box.contactus button.btn2{outline:0;}
+
+.right_box iframe{width:100%; height:340px;margin:0 auto;}
+.right_box .contactus_box{border-bottom:1px solid #dddcdc;padding-bottom: .7rem;margin-bottom: .7rem;}
+.right_box .contactus_box span.sub_title{color:#909;}

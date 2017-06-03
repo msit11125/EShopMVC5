@@ -1,0 +1,46 @@
+﻿<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">展覽設計 / Exhibition Design</div>
+<div class="main">
+
+    <div class="location_title">
+        <div class="sub_box">
+            <div class="select_year">選擇年份：<select id="DropDown_Year"></select></div>
+            <a class="btn" href="@Url.Action("Exhibition","Event")"><span>回列表</span></a>
+        </div>
+    </div>
+
+    <div class="company">
+
+
+    </div>
+</div>
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_event.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/event.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}

@@ -1,0 +1,64 @@
+﻿<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">魅力團隊 / Charisma Team</div>
+<div class="main">
+    <div class="section charism">
+        <div class="title3">企劃業務</div>
+        <p>
+            與客戶溝通討論需求，將需求傳遞給設計團隊，並提供完善的規劃與建議方案，掌握時程與預算，為客戶提供高品質的服務。
+        </p>
+        <span><img src="@Url.Content("~/Content/assets/charisma_01.png")"></span>
+    </div>
+    <div class="section charism">
+        <div class="title3">創意設計</div>
+        <p>
+            專業的平面與3D設計團隊，不論展覽會場、平面設計、辦公空間等，提供跨產業全方位的專業設計服務。
+        </p>
+        <span><img src="@Url.Content("~/Content/assets/charisma_02.png")"></span>
+    </div>
+    <div class="section charism">
+        <div class="title3">工務管理</div>
+        <p>
+            會展經驗豐富的工務部門，連結專業木工與協力廠商，是將圖面化為真實的關鍵部門。
+        </p>
+        <span><img src="@Url.Content("~/Content/assets/charisma_03.png")"></span>
+    </div>
+    <div class="section charism">
+        <div class="title3">行政管理</div>
+        <p>
+            負責財務、人力、採購等行政工作，是維繫各部門運作的強大支援後盾。
+        </p>
+        <span><img src="@Url.Content("~/Content/assets/charisma_04.png")"></span>
+    </div>
+
+</div>
+
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_about.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/about.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}

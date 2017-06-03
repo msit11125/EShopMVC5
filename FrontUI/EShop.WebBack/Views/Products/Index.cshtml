@@ -1,0 +1,201 @@
+﻿
+@model EShop.ViewModels.CategoryViewModel
+@{
+    ViewBag.Title = "ProductIndex";
+}
+
+
+
+<h2>商品管理</h2>
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-2">分類名稱</label>
+        <div class="col-md-4">
+            @Html.DropDownListFor(m => m.CategoryID, (SelectList)ViewBag.CategorySelectList, "-- 請選擇 --", new { onchange = "categoryChange()", @class = "form-control" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-md-2">子分類名稱</label>
+        <div class="col-md-4">
+            <select id="categorySubID" name="categorySubID" class="form-control">
+                <option value="0">-- 先選擇分類編號 --</option>
+            </select>
+        </div>
+        <img id="loadImg" src="~/Content/images/ajax-loader.gif" />
+
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">說明 : </label>
+        <div class="col-md-10">
+            <span id="cateSubDescription" class="form-control" style="border:none;box-shadow:none;"></span>
+        </div>
+
+
+    </div>
+</div>
+<br />
+<div id="SearchResults">
+
+</div>
+
+
+
+
+@section scripts{
+    <script>
+        //----------- For Index -------------------------------------
+        //-----------------------------------------------------------
+        var sel = $('#categorySubID');
+        var SearchResults = $('#SearchResults');
+        var loadImg = $('#loadImg');
+
+        loadImg.hide();
+
+        //select1 下拉變動
+        function categoryChange() {
+            var selCateVal = $('#CategoryID').val();
+            sel.empty();
+            if (selCateVal.length == 0) {
+                SearchResults.empty();
+                var opt = $('<option></option>').val(0).text('--先選擇分類編號--');
+                sel.append(opt);
+
+                return;
+            }
+            $.getJSON('@Url.Action("GetCategorySubJson", "Products")', { id: selCateVal }, function (datas) {
+                $.each(datas, function (idx, data) {
+                    //方法一
+                    $(document.createElement('option'))
+                        .attr('value', data.CategorySubID)
+                        .text(data.CategoryNameSub)
+                        .attr('data-descr', data.Description)
+                        .appendTo(sel);
+
+                })
+                if (datas.length == 0) {
+                    $(document.createElement('option'))
+                        .attr('value', 0)
+                        .text('查無資料!')
+                        .appendTo(sel);
+                }
+                sel.change();
+
+            });
+        }
+
+        //select2 下拉變動 載入PartialView
+        sel.on('change', function () {
+            loadImg.show();
+            SearchResults.empty();
+            var descr = $(this).find(':selected').data('descr');
+            if (descr != null) {
+                $('#cateSubDescription').text(descr);
+            }
+            else {
+                $('#cateSubDescription').text('尚無說明');
+            }
+            SearchResults.load("@Url.Action("PartialProductList", "Products")?categorySubID=" + $(this).val(), function () {
+                loadImg.hide();
+                PartialProductLoad();
+            });
+
+        });
+
+
+
+
+        //----------- For PartialProductList -------------------------------------
+        //-------------------------------------------------------------------
+
+        function PartialProductLoad() {
+            var SearchResults = $('#SearchResults');
+            //點選新增商品
+            SearchResults.on('click', 'p #addProduct', function () {
+                var cid = $('#cCategoryID').val();
+                var csid = $('#cCategorySubID').val();
+                $('#SearchResults #CrudPartial').load('@Url.Action("Create", "Products")?categoryID=' + cid + "&categorySubID=" + csid, function () {
+                    $('#myModal').modal('show');
+                    CrudEvent();
+                })
+            })
+            //點選編輯商品
+            SearchResults.on('click', 'table tbody tr td a:contains("Edit")', function (e) {
+                e.preventDefault();
+                var url = $(this).attr('href');
+                $('#SearchResults #CrudPartial').load(url, function () {
+                    $('#myModal').modal('show');
+                    CrudEvent();
+                })
+            })
+            //點選詳細商品
+            SearchResults.on('click', 'table tbody tr td a:contains("Details")', function (e) {
+                e.preventDefault();
+                var url = $(this).attr('href');
+                $('#SearchResults #CrudPartial').load(url, function () {
+                    $('#myModal').modal('show');
+                })
+            })
+        }
+
+        //----------- For Crud -------------------------------------------
+        //------------------------------------------------------------------
+
+        function CrudEvent() {
+            $('input[type=submit]').on('click', function (e) {
+                e.preventDefault();
+                var form = $('#CrudForm');
+                DoAjaxPostAndMore(form, CrudEvent);
+            });
+        }
+
+        //非同步傳送表單 (此方法可以傳檔案)
+        function DoAjaxPostAndMore(form, refreshCallback) {
+            var $form = form;
+
+            //非同步傳送表單
+            $.ajax({
+                type: "POST",
+                url: $form.attr('action'),
+                cache: false,
+                data: new FormData($form[0]),
+                processData: false,
+                contentType: false,
+                error: function (xhr, status, error) {
+                    //do something about the error
+                },
+                success: function (response) {
+                    if (response.success) {
+                        //更新partial view
+                        $('#myModal').modal('hide');
+                        $('.modal-backdrop').remove();
+                        sel.change();
+                    }
+                    else {
+                        $('#CrudPartial').html(response);
+                        refreshCallback();
+                    }
+                }
+            }).done(function (data) {
+                
+            });
+
+        }
+
+        function getCookie(name)//取cookies函数        
+        {
+            var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+            if (arr != null) return unescape(arr[2]); return null;
+
+        }
+        function delCookie(name)//删除cookie
+        {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null) document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+        }
+
+    </script>
+}

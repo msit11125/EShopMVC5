@@ -1,0 +1,12 @@
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\AutoMapper.Net4.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\IDEASpaceMVC5.BLL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\IDEASpaceMVC5.BLL.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\AutoMapper.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\IDEASpaceMVC5.DAL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\IDEASpaceMVC5.Domain.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\IDEASpaceMVC5.DAL.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\IDEASpaceMVC5.Domain.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\bin\Release\AutoMapper.xml
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\obj\Release\IDEASpaceMVC5.BLL.csprojResolveAssemblyReference.cache
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\obj\Release\IDEASpaceMVC5.BLL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.BLL\obj\Release\IDEASpaceMVC5.BLL.pdb

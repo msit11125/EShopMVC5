@@ -1,0 +1,12 @@
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\IDEASpaceMVC5.DAL.dll.config
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\IDEASpaceMVC5.DAL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\IDEASpaceMVC5.DAL.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\EntityFramework.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\IDEASpaceMVC5.Domain.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\IDEASpaceMVC5.Domain.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\EntityFramework.xml
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\obj\Release\IDEASpaceMVC5.DAL.csprojResolveAssemblyReference.cache
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\obj\Release\IDEASpaceMVC5.DAL.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.DAL\obj\Release\IDEASpaceMVC5.DAL.pdb

@@ -1,0 +1,41 @@
+﻿
+<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">魅力源起 / About Us</div>
+<div class="main">
+    <div class="right_box aboutus"><img src="@Url.Content("~/Content/assets/aboutus_pic.png")"><span>@@2016台北國際電玩展Taipei Game Show</span></div>
+    <div class="left_box aboutus">
+        <p>魅力角設隸屬於智冠集團旗下，是集團中專業的空間設計部門，專職負責集團內部各式展覽、活動設計佈置，魅力角設於2011年開始正式對外營運，服務範圍涵蓋-會展佈置、商業空間、平面形象設計等…場佈設計裝潢，除此之外還整合了集團資源，為客戶提供全方位的會場活動諮詢以及服務，不論是展覽活動、產品發表、記者會、研討會、社群活動等均有豐富經驗。</p>
+        <p>魅力角設以永續經營的精神出發，以高品質的設計與服務來協助客戶，並將客戶展場成果視為我們的成功。我們致力與客戶建立長期的夥伴關係，期望成為客戶信賴且成功的重要夥伴，並且認真看待每一次與客戶接觸的機會，同時我們也將每一次的設計視為一件展覽藝術品來對待，我們以提供最專業的展覽諮詢、以客戶角度設想、討論、解決問題，來做為組織的使命。</p>
+    </div>
+
+</div>
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_about.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/about.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}

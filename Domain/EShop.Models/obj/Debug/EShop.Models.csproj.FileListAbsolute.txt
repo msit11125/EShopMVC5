@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\Eshop\EShop.Models\bin\Debug\EShop.Models.dll
+C:\Users\USER\Desktop\Eshop\EShop.Models\bin\Debug\EShop.Models.pdb
+C:\Users\USER\Desktop\Eshop\EShop.Models\obj\Debug\EShop.Models.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Eshop\EShop.Models\obj\Debug\EShop.Models.dll
+C:\Users\USER\Desktop\Eshop\EShop.Models\obj\Debug\EShop.Models.pdb
+C:\Users\USER\Desktop\Eshop\Domain\EShop.Models\bin\Debug\EShop.Models.dll
+C:\Users\USER\Desktop\Eshop\Domain\EShop.Models\bin\Debug\EShop.Models.pdb
+C:\Users\USER\Desktop\Eshop\Domain\EShop.Models\obj\Debug\EShop.Models.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Eshop\Domain\EShop.Models\obj\Debug\EShop.Models.dll
+C:\Users\USER\Desktop\Eshop\Domain\EShop.Models\obj\Debug\EShop.Models.pdb
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.Models\bin\Debug\EShop.Models.dll
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.Models\bin\Debug\EShop.Models.pdb
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.Models\obj\Debug\EShop.Models.dll
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.Models\obj\Debug\EShop.Models.pdb
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.Models\obj\Debug\EShop.Models.csprojResolveAssemblyReference.cache

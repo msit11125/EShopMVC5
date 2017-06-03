@@ -1,0 +1,4 @@
+D:\IDEASpaceMVC5\IDEASpaceMVC5.Domain\bin\Release\IDEASpaceMVC5.Domain.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.Domain\bin\Release\IDEASpaceMVC5.Domain.pdb
+D:\IDEASpaceMVC5\IDEASpaceMVC5.Domain\obj\Release\IDEASpaceMVC5.Domain.dll
+D:\IDEASpaceMVC5\IDEASpaceMVC5.Domain\obj\Release\IDEASpaceMVC5.Domain.pdb

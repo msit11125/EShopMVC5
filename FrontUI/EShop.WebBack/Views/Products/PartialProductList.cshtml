@@ -1,0 +1,126 @@
+﻿
+@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<EShop.ViewModels.ProductViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>查詢商品列表</h3>
+
+<p>
+    <input type="button" id="addProduct" class="btn btn-default" value="新增商品" />
+</p>
+
+
+
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">新增商品</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="CrudPartial">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="modalClose" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@Html.HiddenFor(m => m.FirstOrDefault().CategorySub.CategoryID, new { id = "cCategoryID" })
+@Html.HiddenFor(m => m.FirstOrDefault().CategorySubID, new { id = "cCategorySubID" })
+
+<!--有資料再產生Table-->
+@if(!string.IsNullOrEmpty(Model.FirstOrDefault().ProductName))
+{
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>
+                <input type="button" id="ProductModelOrder" class="btn btn-link" value="商品型號" />
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Photo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
+            </th>
+            <th>
+                Memo
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductModel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Photo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @if (item.Status == 1)
+                    {
+                        @Html.Raw("<span class='text-success'>上架</span>")
+                    }
+                    else
+                    {
+                        @Html.Raw("<span class='text-primary'>下架</span>")
+                    }
+                </td>
+                <td>
+                    <!--判斷金額是否大於100元-->
+                    @Html.Raw(ViewBag.MemoPrice(item.UnitPrice))
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ProductID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ProductID })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <!--分頁標籤-->
+    @Html.PagedListPager(Model, page => Url.Action("PartialProductList", "Products",
+        new { page = page, categorySubID = Model.FirstOrDefault().CategorySubID }),
+        PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod = "GET", UpdateTargetId = "SearchResults" }))
+
+
+}

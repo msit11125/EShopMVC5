@@ -1,0 +1,52 @@
+﻿<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">模型展示 / 3D models</div>
+<div class="main">
+    <div class="left_box sketchfab">
+        <div class="sketchfab-container">
+            <iframe frameborder="0" allowfullscreen mozallowfullscreen="true"
+                    webkitallowfullscreen="true" onmousewheel=""></iframe>
+        </div>
+    </div>
+    <div class="right_box sketchfab">
+    </div>
+</div>
+
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_movie.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/movie.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}
+
+@section scripts{
+    <script src="@Url.Content("~/Scripts/slick.min.js")" type="text/javascript"></script>
+
+}
+
+@section css{
+    @Styles.Render("~/Content/css/slick.css")
+}

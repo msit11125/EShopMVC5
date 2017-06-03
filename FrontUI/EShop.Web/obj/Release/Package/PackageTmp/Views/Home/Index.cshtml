@@ -1,0 +1,45 @@
+﻿
+
+
+<div class="m_index_menu_box"></div>
+
+    <video id="index_movie" preload loop autoplay poster="@Url.Content("~/Content/assets/index_bg.jpg")">
+        <!-- 影片網址改這邊 -->
+        <source src="@Url.Content("~/Content/assets/video.mp4")" type="video/mp4" />
+    </video>
+    <div class="index_address">
+        台北市南港區南港路2段99-10號<br>Tel (02)2788-9188  |  Fax (02)2788-9295
+    </div>
+
+
+
+    @section devices{
+        <script type="text/javascript">
+            //判斷裝置來源
+            var w = screen.width;
+            var h = screen.height;
+            var url = location.search;
+            var agent = navigator.userAgent.toLowerCase();
+            var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_index.css")\" />"
+            var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/index.css")\" />"
+
+            if (agent.match("iphone")) {
+                //console.log("iphone");
+                document.write(mobile_css);
+            } else if (agent.match("android")) {
+                if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                    // console.log("tablet");
+                    document.write(mobile_css);
+                } else {
+                    // console.log("android phone");
+                    document.write(mobile_css);
+                };
+            } else if (agent.match("ipad")) {
+                // console.log("ipad");
+                document.write(mobile_css);
+            } else {
+                // console.log("desktop");
+                document.write(desktop_css);
+            }
+        </script>
+    }

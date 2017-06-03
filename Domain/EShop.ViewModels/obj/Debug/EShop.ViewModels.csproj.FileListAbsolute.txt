@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\Eshop\EShop.ViewModels\bin\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\Eshop\EShop.ViewModels\bin\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\Eshop\EShop.ViewModels\obj\Debug\EShop.ViewModels.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Eshop\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\Eshop\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\Eshop\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\Eshop\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\Eshop\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\Eshop\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\Eshop\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.dll
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.pdb
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
+C:\Users\msit11125\Desktop\Eshop\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.csprojResolveAssemblyReference.cache

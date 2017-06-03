@@ -1,0 +1,137 @@
+﻿<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">展覽設計 / Exhibition Design</div>
+<div class="main">
+    <div class="right_box event"><img src=""><span></span></div>
+    <div class="left_box event">
+        <div class="section">
+            <div class="title">1月~3月 Season 1</div>
+            <div class="content"></div>
+        </div>
+        <div class="section">
+            <div class="title">4月~6月 Season 2</div>
+            <div class="content"></div>
+        </div>
+        <div class="section">
+            <div class="title">7月~9月 Season 3</div>
+            <div class="content"></div>
+        </div>
+        <div class="section">
+            <div class="title">10月~12月 Season 4</div>
+            <div class="content"></div>
+        </div>
+    </div>
+
+</div>
+
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_event.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/event.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}
+
+
+@section scripts{
+    @*範例檔案*@
+    <script type="text/javascript">
+        $(function(){
+    var json=[];
+    var jsonimg=[];
+    var exhibition=[];
+    var currentproject;
+    var result;
+
+       //event list
+        function build(data,season){
+            var html="";
+            for (var i=0,k=data.length;i<k;i++) {
+
+                if (data[i].season == season) {
+
+                    $.each(data, function () {
+                          var exhibition_title = data[i].location;
+                            // console.log(data);
+                             //https://api.jquery.com/jQuery.inArray/
+                          if ($.inArray(exhibition_title, exhibition) == -1) {
+                              exhibition.push(exhibition_title);
+                              //console.log(exhibition_title);
+                              html+="<a href=\"@Url.Action("ExhibitionDetail", "Event")?project=" + data[i].project +"\"" + " data-project=\""+ data[i].project +"\">";
+                              html+= data[i].location +"</a>";
+                          }
+                    });
+                }
+
+          }
+          return html;
+        }
+
+
+        $.getJSON('/Scripts/data/exhibition.json',function(data){
+            json=data;
+            for(var i=0;i<4;i++){
+              $(".content").eq(i).html(build(data, i));
+            };
+        });
+
+        $.getJSON('/Scripts/data/exhibition_img.json', function (data) {
+            jsonimg=data;
+
+             $(".section a").mouseover(function(){
+
+                currentproject = $(this).attr("data-project");
+                filterphoto();
+                //console.log(id_photo);
+             });
+            //取season1 第一個展覽的圖片為進版圖片
+            id0_photo =data[0].photo;
+            id0_location =data[0].title;
+            $(".right_box.event img").attr("src",id0_photo);
+            $(".right_box.event span").html(id0_location);
+
+        });
+
+        //過濾 滑鼠指的項目取 project 對照同project取圖片及文字
+        function filterphoto(){
+            result = jsonimg.filter(function(a) {
+                             return a.project == currentproject;
+                          })[0];
+
+            id_photo =result.photo;
+            id_location =result.location;
+            $(".right_box.event img").attr("src",id_photo);
+            $(".right_box.event span").html(id_location);
+
+        }
+
+
+
+
+
+
+});
+    </script>
+}

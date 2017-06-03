@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "normalize.css";
+@import "basic.css";
+@import "menu.css";
+
+
+/* movie  +  sketchfab */
+.left_box.movie,.left_box.sketchfab{width:90%;margin:0 auto;}
+.right_box.movie,.right_box.sketchfab{width:90%;margin:30px auto 0 auto;}
+
+.video-container,.sketchfab-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,.sketchfab-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}  
+.right_box.movie a,.right_box.sketchfab a{
+    height:40px;
+    width:210px;
+    display:inline-block;
+    margin:5px 10px 5px 0;
+    padding: 5px 0 0 10px;
+    line-height:30px;
+    border: .8px solid #ccc;
+    font-size:1rem;
+    color:#333; 
+    transition: .5s ease;-webkit-transition: .5s ease; 
+}
+.right_box.movie a:hover,.right_box.movie a.clicked,.right_box.sketchfab a:hover,.right_box.sketchfab a.clicked{
+    background: #909;color:#fff;font-weight:700;transition: .5s ease;-webkit-transition: .5s ease;
+}
+.right_box.movie a::before,.right_box.sketchfab a::before{
+    content:"✧";
+}

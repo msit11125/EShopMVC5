@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "normalize.css";
+@import "m_basic.css";
+@import "m_menu.css";
+
+/* menu 顯示設定 */
+.m_index_menu_box{display:block;}
+.navigator_box{display:none;}
+/* index */
+video#index_movie{display:none;}
+.index_address{margin:30px auto 0 auto;text-align: center;line-height:1.7rem;}

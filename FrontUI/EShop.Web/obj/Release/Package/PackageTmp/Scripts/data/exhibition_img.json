@@ -1,0 +1,28 @@
+[
+	{"title":"台北國際電玩展","location":"台北國際電玩展","photo":"/photos/exhibition_img/tgs.png","project":0},	
+	{"title":"台北國際書展","location":"台北國際書展","photo":"/photos/exhibition_img/tibe.jpg","project":1},
+	{"title":"台北國際工具機展","location":"台北國際工具機展","photo":"/photos/exhibition_img/timtos.png","project":2},
+	{"title":"台北國際自行車展","location":"台北國際自行車展","photo":"/photos/exhibition_img/tics.png","project":3},
+	{"title":"台北國際烘焙展","location":"台北國際烘焙展","photo":"/photos/exhibition_img/tibs.jpg","project":4},
+	{"title":"台北體育用品展","location":"台北體育用品展","photo":"/photos/exhibition_img/taispo.png","project":5},
+	{"title":"台北國際安全展","location":"台北國際安全展","photo":"/photos/exhibition_img/secutech.jpg","project":6},
+	{"title":"台北國際汽配展","location":"台北國際汽配展","photo":"/photos/exhibition_img/ampa.gif","project":7},	
+	{"title":"台北國際食品展","location":"台北國際食品展","photo":"/photos/exhibition_img/foodtaipei.png","project":9},
+	{"title":"台北國際電腦展","location":"台北國際電腦展","photo":"/photos/exhibition_img/computextaipei.png","project":10},
+	{"title":"台灣國際照明展","location":"台灣國際照明展","photo":"/photos/exhibition_img/tils.png","project":11},
+	{"title":"台灣電子遊戲機展","location":"台灣電子遊戲機展","photo":"/photos/exhibition_img/taipeicht.png","project":12},
+	{"title":"台灣生技展","location":"台灣生技展","photo":"/photos/exhibition_img/bioclub.png","project":13},
+	{"title":"漫畫博覽會","location":"漫畫博覽會","photo":"/photos/exhibition_img/ccpa.png","project":14},
+	{"title":"台北國際自動化展","location":"台北國際自動化展","photo":"/photos/exhibition_img/autotaiwan.png","project":15},
+	{"title":"台北國際加盟展","location":"台北國際加盟展","photo":"/photos/exhibition_img/ticfe.png","project":16},
+	{"title":"台北國際塑橡膠展","location":"台北國際塑橡膠展","photo":"/photos/exhibition_img/taipeiplas.png","project":17},
+	{"title":"台北國際半導體展","location":"台北國際半導體展","photo":"/photos/exhibition_img/semicontaiwan.jpg","project":18},
+	{"title":"台北國際太陽光電展","location":"台北國際太陽光電展","photo":"/photos/exhibition_img/pvtaiwan.png","project":19},
+	{"title":"台北國際雷射展","location":"台北國際雷射展","photo":"/photos/exhibition_img/chanchao.png","project":20},
+	{"title":"台北國際電子產業展","location":"台北國際電子產業展","photo":"/photos/exhibition_img/taitronics.png","project":21},
+	{"title":"台灣電路板展","location":"台灣電路板展","photo":"/photos/exhibition_img/tipca.png","project":22},
+	{"title":"台灣國際優良食品展","location":"台灣國際優良食品展","photo":"/photos/exhibition_img/18.jpg","project":23},
+	{"title":"台北國際旅展","location":"台北國際旅展","photo":"/photos/exhibition_img/taipeiitf.png","project":24},
+	{"title":"台北資訊展","location":"台北資訊展","photo":"/photos/exhibition_img/aa.png","project":25}
+
+]

@@ -1,0 +1,75 @@
+﻿<div class="title"><img src="@Url.Content("~/Content/assets/icon_arrow.png")">聯絡我們 / Contact Us</div>
+<div class="main">
+    <p>
+        可至<a href="https://www.facebook.com/charismadesign/" target="_blank" style="font-weight:900;">官方粉絲團</a>私訊小編，或於《服務洽詢》留言處留下聯絡資訊，並請確實填寫您的聯絡資料，我們會盡速與您聯繫！
+    </p>
+
+    <div class="left_box contactus">
+        <a class="fb2" href="https://www.facebook.com/charismadesign/" target="_blank">魅力角設官方粉絲團</a>
+        <span>服務洽詢</span>
+        <FORM action="">
+            <p>
+                <label for="name">姓名：</label>
+                <input type="text" name="name" class="name">
+            </p>
+            <p>
+                <label for="phone_n">手機：</label>
+                <input type="text" name="phone_n" class="phone_n">
+            </p>
+            <p>
+                <label for="email">E-Mail：</label>
+                <input type="text" name="email" class="email">
+            </p>
+            <p>
+                <label for="detail">洽詢事宜說明：</label>
+                <textarea rows="4" cols="50"></textarea>
+            </p>
+
+            <button class="btn2" type="reset" value="Reset">重填</button>
+            <button class="btn2" type="submit" form="nameform" value="Submit">送出</button>
+        </FORM>
+    </div>
+
+    <div class="right_box contactus">
+        <div class="contactus_box">
+            <p><span class="sub_title">公司地址：</span>台北市南港區南港路 2 段 99-10 號</p>
+            <p><span class="sub_title">聯絡信箱：</span>jdlin@soft-world.com.tw</p>
+            <p><span class="sub_title">電話：</span>（02）2788-9188</p>
+            <p><span class="sub_title">傳真：</span>（02）2788-9295</p>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.423414577344!2d121.59486991541795!3d25.053634243657168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab6456ff6fdb%3A0xdde3e07196811425!2zMTE15Y-w5YyX5biC5Y2X5riv5Y2A5Y2X5riv6Lev5LqM5q61OTktMTDomZ8!5e0!3m2!1szh-TW!2stw!4v1469516437287" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+@section devices{
+    <script type="text/javascript">
+        //判斷裝置來源
+        var w = screen.width;
+        var h = screen.height;
+        var url = location.search;
+        var agent = navigator.userAgent.toLowerCase();
+        var mobile_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/m_about.css")\" />"
+        var desktop_css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"@Url.Content("~/Content/css/about.css")\" />"
+
+        if (agent.match("iphone")) {
+            //console.log("iphone");
+            document.write(mobile_css);
+        } else if (agent.match("android")) {
+            if (w == 800 && h == 1280 || w == 1280 && h == 800) {
+                // console.log("tablet");
+                document.write(mobile_css);
+            } else {
+                // console.log("android phone");
+                document.write(mobile_css);
+            };
+        } else if (agent.match("ipad")) {
+            // console.log("ipad");
+            document.write(mobile_css);
+        } else {
+            // console.log("desktop");
+            document.write(desktop_css);
+        }
+    </script>
+}
