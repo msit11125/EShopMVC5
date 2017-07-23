@@ -16,3 +16,8 @@ C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EntityFr
 C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.dll
 C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EShop.DAL.Interfaces.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EShop.DAL.Interfaces.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.pdb

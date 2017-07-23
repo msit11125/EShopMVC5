@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label>username : </label>
+            <input type="text" value="" id="txtUsername" />
+        </div>
+        <div>
+            <label>password : </label>
+            <input type="text" value="" id="txtPassword" />
+        </div>
+
+        <input type="button" class="btn btn-default" value="Login" />
+
+        <br />
+        <div id="showMsg">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script>
+        $('input[value=Login]').on('click', function () {
+            let username = $('#txtUsername').val();
+            let password = $('#txtPassword').val();
+            var Div = $('#showMsg');
+            $.ajax({
+                type: 'GET',
+                url: 'api/AccountTest',
+                dataType: 'json',
+                headers: {
+                    'Authorization': 'Basic ' + btoa(username + ':' + password)
+                },
+                success: function (data) {
+                    Div.html('<p>' + data + '</p>');
+                },
+                complete: function (jqXHR) {
+                    if (jqXHR.status != 200) {
+                        Div.html('<p style="color:red">' + jqXHR.status + ':' + jqXHR.statusText + '</p>')
+                    }
+                }
+            })
+        })
+        
+    </script>
+</body>
+</html>

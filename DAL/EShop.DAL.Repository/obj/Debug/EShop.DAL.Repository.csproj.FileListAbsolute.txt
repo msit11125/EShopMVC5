@@ -66,3 +66,15 @@ C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DA
 C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.csprojResolveAssemblyReference.cache
 C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.dll
 C:\Users\msit11125\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Repository.dll.config
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Repository.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Repository.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Interfaces.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.Models.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.Models.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Interfaces.pdb
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.dll
+C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.pdb

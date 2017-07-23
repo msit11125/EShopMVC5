@@ -18,3 +18,7 @@ C:\Users\msit11125\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.Vie
 C:\Users\msit11125\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.csprojResolveAssemblyReference.cache
 C:\Users\msit11125\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
 C:\Users\msit11125\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.pdb
+C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
+C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
