@@ -34,7 +34,7 @@ namespace EShop.WebBack
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),
+                AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),  //設定Token過期時間: 14天後會過期
                 // 在生產模式中設定 AllowInsecureHttp = false
                 AllowInsecureHttp = true
             };

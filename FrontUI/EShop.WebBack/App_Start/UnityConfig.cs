@@ -1,6 +1,7 @@
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
 using Unity.Mvc5;
+using EShop.DAL.Repository;
 
 namespace EShop.WebBack
 {
@@ -14,7 +15,7 @@ namespace EShop.WebBack
             //// 2. 註冊服務、物件
 
             //// Entity
-            //var dbContext = new SampleDBEntities();
+            //var dbContext = new EShopContext();
             //// Repository
             //container.RegisterType<IRepository<Category>, IRepository<Category>>(
             //    new InjectionConstructor(dbContext));
@@ -24,7 +25,7 @@ namespace EShop.WebBack
 
             //// 3. 開始注入
             //DependencyResolver.SetResolver(new UnityDependencyResolver(container));
-            
+
         }
     }
 }

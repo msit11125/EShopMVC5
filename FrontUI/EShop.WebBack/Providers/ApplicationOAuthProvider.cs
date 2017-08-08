@@ -1,4 +1,5 @@
-﻿using EShop.WebBack.Models;
+﻿using EShop.BLL.Interfaces;
+using EShop.WebBack.Models;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
@@ -7,8 +8,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Principal;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Mvc;
 
 namespace EShop.WebBack.Providers
 {
@@ -40,7 +44,10 @@ namespace EShop.WebBack.Providers
                 context.SetError("invalid_grant", "使用者名稱或密碼不正確。");
                 return;
             }
-            //登入驗證正確後 會回傳一個Token 此Token是記在Cookie內 有時間限制
+
+           
+
+            //登入驗證正確後 ticket紀錄 username
 
             ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(userManager,
                OAuthDefaults.AuthenticationType);

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label>username : </label>
+            <input type="text" value="" id="txtUsername" />
+        </div>
+        <div>
+            <label>password : </label>
+            <input type="text" value="" id="txtPassword" />
+        </div>
+
+        <input type="button" class="btn btn-default" value="Login" />
+
+        <br />
+        <div id="showMsg">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <script>
+        // ***
+        // 這裡只能使用asp.net identity 才能驗證帳密然後要到token
+        $('input[value=Login]').on('click', function () {
+            let username = $('#txtUsername').val();
+            let password = $('#txtPassword').val();
+            $.ajax({
+                type: 'POST',
+                url: '/token',
+                contentType: 'application/json',
+                data: {
+                    username: username,
+                    password: password,
+                    grant_type: 'password'
+                },
+                success: function (response) {
+                    //存token
+                    sessionStorage.setItem('accessToken', response.access_token)
+
+                    // 取值和刪除
+                    //sessionStorage.getItem('accessToken')
+                    //sessionStorage.removeItem('accessToken')
+
+                },
+                error: function (jqXHR) {
+                    $('#showMsg').text(jqXHR.responseText);
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>
