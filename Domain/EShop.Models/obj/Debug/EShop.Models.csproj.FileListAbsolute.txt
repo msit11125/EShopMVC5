@@ -22,3 +22,8 @@ C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.Models\bin\Debug\EShop.Models.dll
 C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.Models\bin\Debug\EShop.Models.pdb
 C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.Models\obj\Debug\EShop.Models.dll
 C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.Models\obj\Debug\EShop.Models.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.Models\bin\Debug\EShop.Models.dll
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.Models\bin\Debug\EShop.Models.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.Models\obj\Debug\EShop.Models.csproj.CoreCompileInputs.cache
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.Models\obj\Debug\EShop.Models.dll
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.Models\obj\Debug\EShop.Models.pdb

@@ -78,3 +78,17 @@ C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Int
 C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.csprojResolveAssemblyReference.cache
 C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.dll
 C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Repository.dll.config
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Repository.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Repository.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Interfaces.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.Models.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.ViewModels.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.Models.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.ViewModels.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\bin\Debug\EShop.DAL.Interfaces.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.csprojAssemblyReference.cache
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.csproj.CoreCompileInputs.cache
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.csproj.CopyComplete
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Repository\obj\Debug\EShop.DAL.Repository.pdb

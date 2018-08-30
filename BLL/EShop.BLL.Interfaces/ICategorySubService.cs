@@ -9,7 +9,7 @@ namespace EShop.BLL.Interfaces
 {
     public interface ICategorySubService
     {
-        IEnumerable<CategorySubViewModel> GetCategorySubList(int categryID);
+        IEnumerable<CategorySubViewModel> GetCategorySubList(int? categryID);
         CategorySubViewModel GetCategorySubByID(int id);
 
         bool AddCategorySub(CategorySubViewModel category);

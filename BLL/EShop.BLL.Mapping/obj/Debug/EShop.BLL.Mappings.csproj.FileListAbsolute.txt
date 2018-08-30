@@ -59,3 +59,14 @@ C:\Users\USER\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.ViewModels
 C:\Users\USER\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.csprojResolveAssemblyReference.cache
 C:\Users\USER\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.dll
 C:\Users\USER\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.BLL.Mappings.dll
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.BLL.Mappings.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.Models.dll
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.ViewModels.dll
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.Models.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\bin\Debug\EShop.ViewModels.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.csprojAssemblyReference.cache
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.csproj.CoreCompileInputs.cache
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.csproj.CopyComplete
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.dll
+C:\Users\felixliao\Desktop\EShopMVC5\BLL\EShop.BLL.Mapping\obj\Debug\EShop.BLL.Mappings.pdb

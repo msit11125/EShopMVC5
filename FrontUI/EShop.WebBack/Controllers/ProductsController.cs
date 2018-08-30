@@ -218,7 +218,6 @@ namespace EShop.WebBack.Controllers
         }
 
 
-
         /// <summary>
         /// 取得圖片
         /// </summary>
@@ -230,31 +229,30 @@ namespace EShop.WebBack.Controllers
         }
 
 
-        //// GET: Products/Delete/5
-        //public ActionResult Delete(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    Product product = db.Products.Find(id);
-        //    if (product == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(product);
-        //}
+        // GET: Products/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            
+            var product = _serviceP.GetProductByID((int)id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
+        }
 
-        //// POST: Products/Delete/5
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteConfirmed(int id)
-        //{
-        //    Product product = db.Products.Find(id);
-        //    db.Products.Remove(product);
-        //    db.SaveChanges();
-        //    return RedirectToAction("Index");
-        //}
+        // POST: Products/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            bool isSave = _serviceP.DeleteProduct(id);
+            return RedirectToAction("Index");
+        }
 
 
     }

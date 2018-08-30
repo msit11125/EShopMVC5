@@ -21,3 +21,11 @@ C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EShop.DAL.Int
 C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EntityFramework.dll
 C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.dll
 C:\Users\USER\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EShop.DAL.Interfaces.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EShop.DAL.Interfaces.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.csprojAssemblyReference.cache
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.csproj.CopyComplete
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.dll
+C:\Users\felixliao\Desktop\EShopMVC5\DAL\EShop.DAL.Interfaces\obj\Debug\EShop.DAL.Interfaces.pdb

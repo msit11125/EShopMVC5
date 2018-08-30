@@ -1,4 +1,4 @@
-﻿@model EShop.Models.Product
+﻿@model EShop.ViewModels.ProductViewModel
 
 @{
     ViewBag.Title = "Delete";
@@ -85,8 +85,9 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm("DeleteConfirmed","Products")) {
         @Html.AntiForgeryToken()
+        @Html.HiddenFor(p=>p.ProductID)
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |

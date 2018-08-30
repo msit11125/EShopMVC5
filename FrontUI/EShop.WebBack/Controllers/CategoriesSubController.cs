@@ -36,9 +36,10 @@ namespace EShop.WebBack.Controllers
             return View();
         }
 
-        public PartialViewResult CategorySubPartial(int CategoryID = 1) //預設帶分類編號1
+        public PartialViewResult CategorySubPartial(int? CategoryID = 1) //預設帶分類編號1
         {
             var categorylist = _serviceCS.GetCategorySubList(CategoryID);
+            ViewBag.CategoryID = CategoryID;
             return PartialView(categorylist);
         }
 
@@ -60,12 +61,13 @@ namespace EShop.WebBack.Controllers
         }
 
         // GET: CategoriesSub/Create
-        public ActionResult Create()
+        public ActionResult Create(int cID)
         {
             var categorylist = _serviceC.GetAllCateogryList();
-            var selectlist = categorylist.ToSelectList(v => v.CategoryID, n => n.CategoryName);
+            var selectlist = categorylist.ToSelectList(v => v.CategoryID, n => n.CategoryName, cID);
 
             ViewBag.CategorySelectList = selectlist;
+            CategoryViewModel cvm = new CategoryViewModel() { CategoryID = cID };
             return View();
         }
 

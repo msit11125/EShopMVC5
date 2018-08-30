@@ -19,9 +19,9 @@ namespace EShop.BLL.Service
             _categorysub = categorysub;
         }
 
-        public IEnumerable<CategorySubViewModel> GetCategorySubList(int categoryID)
+        public IEnumerable<CategorySubViewModel> GetCategorySubList(int? categoryID)
         {
-            var csList = _categorysub.Get(filter:c=>c.CategoryID == categoryID);
+            var csList = _categorysub.Get(filter:  c=> categoryID == null ? true : c.CategoryID == categoryID);
 
             //資料對應
             var mapResult = Mapper.Map<IEnumerable<CategorySub>, IEnumerable<CategorySubViewModel>>(csList);

@@ -49,6 +49,7 @@
         //-----------------------------------------------------------
         var sel = $('#categorySubID');
         var SearchResults = $('#SearchResults');
+        var DescriptDiv = $('#cateSubDescription');
         var loadImg = $('#loadImg');
 
         loadImg.hide();
@@ -73,15 +74,18 @@
                         .attr('data-descr', data.Description)
                         .appendTo(sel);
 
+                    sel.change();
                 })
                 if (datas.length == 0) {
                     $(document.createElement('option'))
-                        .attr('value', 0)
                         .text('查無資料!')
                         .appendTo(sel);
-                }
-                sel.change();
 
+                    DescriptDiv.empty();
+                    SearchResults.empty();
+                }
+                
+               
             });
         }
 
@@ -91,10 +95,10 @@
             SearchResults.empty();
             var descr = $(this).find(':selected').data('descr');
             if (descr != null) {
-                $('#cateSubDescription').text(descr);
+                DescriptDiv.text(descr);
             }
             else {
-                $('#cateSubDescription').text('尚無說明');
+                DescriptDiv.text('尚無說明');
             }
             SearchResults.load("@Url.Action("PartialProductList", "Products")?categorySubID=" + $(this).val(), function () {
                 loadImg.hide();

@@ -4,11 +4,12 @@
 }
 
 <h2>子類別管理</h2>
+<hr />
 @using (Ajax.BeginForm("CategorySubPartial", "CategoriesSub", new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "SearchResults", InsertionMode = InsertionMode.Replace }))
 {
     <div class="row">
         <div class="col-md-4">
-            @Html.DropDownListFor(m => m.CategoryID, (SelectList)ViewBag.CategorySelectList, "-- 請選擇 --", new { onchange = "$(this.form).submit();", @class = "form-control" })
+            @Html.DropDownListFor(m => m.CategoryID, (SelectList)ViewBag.CategorySelectList, new { onchange = "$(this.form).submit();", @class = "form-control" })
         </div>
     </div>
 }

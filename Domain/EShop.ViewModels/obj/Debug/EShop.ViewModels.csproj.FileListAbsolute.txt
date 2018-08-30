@@ -22,3 +22,9 @@ C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.ViewMode
 C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.pdb
 C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
 C:\Users\USER\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.dll
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.ViewModels\bin\Debug\EShop.ViewModels.pdb
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.csprojAssemblyReference.cache
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.dll
+C:\Users\felixliao\Desktop\EShopMVC5\Domain\EShop.ViewModels\obj\Debug\EShop.ViewModels.pdb
